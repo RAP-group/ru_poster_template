@@ -2,7 +2,7 @@ UA poster templates
 ===================
 
 University of Arizona/AAPL themed poster templates.  
-Based on  created by Brian Amberg (baposter@brian-amberg.de)  
+Based on **baposter** created by Brian Amberg (baposter@brian-amberg.de)  
 modified by me (May 2013)
 
 ## Portrait
