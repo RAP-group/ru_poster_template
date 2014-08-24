@@ -1,4 +1,4 @@
-UA_poster_templates
+UA poster templates
 ===================
 
 University of Arizona/AAPL themed poster templates.  
