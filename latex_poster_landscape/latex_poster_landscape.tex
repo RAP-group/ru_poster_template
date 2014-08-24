@@ -1,0 +1,332 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% baposter landscape poster
+% LaTeX Template
+% Version 1.0 (15/5/13)
+%
+% Created by:
+% Brian Amberg (baposter@brian-amberg.de)
+% 
+% Modified by: Joseph V. Casillas (jvcasill@email.arizona.edu)
+% using UA colors and AAPL lab logo
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a0paper,landscape,columns=3]{baposter}
+
+\usepackage[font=small,labelfont=bf]{caption} % Required for specifying captions to tables and figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{relsize} % Used for making text smaller in some places
+\usepackage{tipa}
+\usepackage{amssymb}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage[margin=.7cm]{caption}
+\usepackage{hhline}
+\usepackage{colortbl}
+
+
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,matrix,trees,mindmap,shapes}
+
+\graphicspath{{figures/}} % Directory in which figures are stored
+
+% UA colors
+% UA red	RGB 171   5 32
+% UA blue	RGB   0  33 71
+% UA copper	RGB 163	102	77
+
+\definecolor{bordercol}{RGB}{0,33,71} % Border color of content boxes
+\definecolor{headercol1}{RGB}{171,5,32} % Background color for the header in the content boxes (left side)
+\definecolor{headercol2}{RGB}{171,5,32} % Background color for the header in the content boxes (right side)
+\definecolor{headerfontcol}{RGB}{255,255,255} % Text color for the header text in the content boxes
+\definecolor{boxcolor}{RGB}{255,255,255} % Background color for the content in the content boxes
+\definecolor{uared}{RGB}{204,0,51}
+
+\usepackage{enumitem}
+\setlist{itemsep=.25ex}
+
+
+\begin{document}
+
+
+\background{ % Set the background to an image (background.pdf)
+\begin{tikzpicture}[remember picture,overlay]
+\draw (current page.north west)+(-2em,2em) node[anchor=north west]
+{\includegraphics[height=1.1\textheight]{bg}};
+\end{tikzpicture}
+}
+
+\begin{poster}{
+grid=false,
+borderColor=bordercol, % Border color of content boxes
+headerColorOne=headercol1, % Background color for the header in the content boxes (left side)
+headerColorTwo=headercol2, % Background color for the header in the content boxes (right side)
+headerFontColor=headerfontcol, % Text color for the header text in the content boxes
+boxColorOne=boxcolor, % Background color for the content in the content boxes
+headershape=roundedright, % Specify the rounded corner in the content box headers
+headerfont=\Large\sf\bf, % Font modifiers for the text in the content box headers
+textborder=rectangle,
+background=user,
+headerborder=closed, % Change to closed for a line under the content box headers
+boxshade=plain
+}
+{}
+%
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR NAME 
+%----------------------------------------------------------------------------------------
+%
+{\sf\bf \LARGE{The name of the poster goes here}}
+{\vspace{.6em} \textbf{First Author}, \textbf{Second Author}, \textbf{Third Author}\\ 
+\smaller{University of Arizona \\ Tucson, Arizona, U.S.A.} \\
+{\hspace{-7in}\includegraphics[scale=0.2]{UA_logo}\phantom{.}} \\
+{\vspace{-.4in}\smaller \{author1, author2, author3\}@email.arizona.edu} \\
+{\vspace{-.45in}\phantom{.}\hspace{7in}\includegraphics[scale=0.35]{aalp_logo}}\vspace{-.6in}}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\headerbox{Introduction}{name=introduction,column=0,row=.1}{
+
+\vspace{.1in}
+
+\textbf{Present study}:
+
+\begin{itemize} 
+	\item This is an itemized list
+	\item It can contain as many 
+	\item items as you like
+\end{itemize}
+
+\vspace{.05in}
+\textbf{Previous studies}:
+\vspace{.05in}
+
+References are cited as numbers. Here are a few examples. Previous studies found that certain things happen \cite{cho2007prosodically}. Another person found that another thing happened \cite{guion2003vowel}, but some people don't agree with the results \cite{amengual2012interlingual}.\footnote{Its better not to use a lot of text, like this. This footnote is not a number so that it isn't confused with a reference. References look like this \cite{Abramson:1967fk}.}
+
+\begin{itemize}
+	\item Itemized lists
+	\item Can also be nested
+	\begin{itemize}
+		\item Like this
+		\item and this
+		\begin{itemize}
+			\item and this
+			\item and this
+		\end{itemize}
+	\end{itemize}
+	\item And back out
+	\item again
+\end{itemize}
+
+\vspace{.05in}
+
+\textbf{Research Questions}:
+
+\begin{enumerate} 
+	\item We can also make numbered lists
+	\item Which can also be nested
+	\begin{enumerate}
+		\item These are good for your hypotheses
+		\item another item
+	\end{enumerate}
+	\item Im trying to take up space
+	\item SO more items
+\end{enumerate}
+
+\vspace{.13in}
+
+}
+
+
+%----------------------------------------------------------------------------------------
+%	MATERIALS AND METHODS
+%----------------------------------------------------------------------------------------
+
+\headerbox{Method}{name=methods,column=1,row=.1}{
+
+\vspace{.1in}
+\textbf{Materials}
+
+\begin{itemize}
+	\item Materials used
+	\item Participants
+	\item Stimuli
+	\item Etc.
+	\item item
+\end{itemize}
+
+\vspace{.05in}
+\textbf{Procedure}
+
+\begin{itemize}
+	\item This is what we did
+	\item This is how we did it
+	\item So and so did it this way too
+	\item Some examples here would be handy
+	\item item
+\end{itemize}
+
+\vspace{.05in}
+\textbf{Analysis}
+
+\begin{itemize}
+	\item The data were like this...
+	\item This is how we analyzed it.
+	\item So and so did this too
+	\item This is the best way
+	\item Here is an example...
+\end{itemize}
+
+\vspace{.1in}
+
+\begin{center}
+\captionof{table}{This is a table caption.}
+\vspace{.15in}
+	\begin{tabular}{@{}cccc@{}}
+	\hline \\ [-2ex]
+	        & Lead            & Short-lag       & Long-lag \\ [1ex]	
+	\hline \\ [-2ex]
+	English &                 & \textipa{/bdg/} & \textipa{/ptk/} \\ [1ex]
+	Spanish & \textipa{/bdg/} & \textipa{/ptk/} & \\ [1ex]
+	\hline
+	\end{tabular}
+\end{center}
+
+\vspace{.375in}
+
+}
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	RESULTS
+%----------------------------------------------------------------------------------------
+
+\headerbox{Results}{name=results,column=2,row=.1}{ % To reduce this block to 1 column width, remove 'span=2'
+
+\vspace{.2in}
+
+\begin{center}
+	\captionof{figure}{Here is a figure caption. Figure captions can span more than one line. The width and justification is taken care of by the \emph{caption} package (in the preamble).}
+	\vspace{.15in}
+	\includegraphics[width=.9\textwidth]{figures/placeholder.jpg}
+\end{center}
+
+\vspace{.15in}
+
+\begin{center}
+\captionof{figure}{You can place two figures side-by-side. Refer one picture (left) and then to the other (right).}
+\vspace{.15in}
+\includegraphics[width=0.45\linewidth]{figures/placeholder.jpg}
+\includegraphics[width=0.45\linewidth]{figures/placeholder.jpg}
+\end{center}
+
+\vspace{.15in}
+
+\begin{itemize}
+	\item Put some numbers here
+	\item (F(1,15) = 14.34; p < 0.05)
+	\item Everything was significant
+	\item item
+	\item item
+\end{itemize}
+
+\vspace{.55in}
+
+%------------------------------------------------
+
+
+}
+
+%----------------------------------------------------------------------------------------
+%	CONCLUSION
+%----------------------------------------------------------------------------------------
+
+\headerbox{Conclusion}{name=conclusion,column=3,row=.1}{
+
+% \vspace{.1in}
+\textbf{Summary}
+
+\begin{itemize}
+	\item The analysis showed A
+	\item The analysis showed B too.
+	\item And don't forget about C, which was also important.
+\end{itemize}
+
+\textbf{Conclusion}
+
+\begin{itemize}
+	\item We learned X, Y, and Z.
+	\item This research is in align with A and B
+	\item But differs from what this other guy found
+	\item Future research should do more things
+\end{itemize}
+
+\vspace{.03in}
+}
+
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCES
+%----------------------------------------------------------------------------------------
+
+\headerbox{Selected references}{name=references,column=3,below=conclusion}{
+
+% \smaller % Reduce the font size in this block
+\renewcommand{\section}[2]{\vskip 0.05em} % Get rid of the default "References" section title
+% \nocite{*} % Insert publications even if they are not cited in the poster
+
+\bibliographystyle{unsrt}
+\bibliography{IEEEabrv,SpeePros} % Use sample.bib as the bibliography file
+\vspace{.02in}
+}
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\headerbox{Acknowledgements}{name=acknowledgements,column=3,below=references}{
+
+\vspace{.1in}
+
+% \smaller % Reduce the font size in this block
+Somebody probably helped you. Thank them here. :)
+
+\vspace{.075in}
+
+
+} 
+
+
+
+\end{poster}
+
+\end{document}
