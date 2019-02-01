@@ -184,7 +184,7 @@ some people don't agree with the results \cite{amengual2012interlingual}.
   than one line. The width and justification is taken care of by the 
   \emph{caption} package (in the preamble).}
   \vspace{.07in}
-  %\includegraphics[width=.9\textwidth]{figures/placeholder.jpg}
+  \includegraphics[width=.9\textwidth]{placeholder.jpg}
 \end{center}
 
 \vspace{.05in}
@@ -193,8 +193,8 @@ some people don't agree with the results \cite{amengual2012interlingual}.
   \captionof{figure}{You can place two figures side-by-side. Refer one picture 
   (left) and then to the other (right).}
   \vspace{.07in}
-  %\includegraphics[width=0.45\linewidth]{figures/placeholder.jpg}
-  %\includegraphics[width=0.45\linewidth]{figures/placeholder.jpg}
+  \includegraphics[width=0.45\linewidth]{placeholder.jpg}
+  \includegraphics[width=0.45\linewidth]{placeholder.jpg}
 \end{center}
 
 \vspace{.15in}
