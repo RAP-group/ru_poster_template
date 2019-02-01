@@ -1,15 +1,11 @@
-UA poster templates
+RU poster templates
 ===================
 
-University of Arizona/AAPL themed poster templates.  
+Rutgers University/RAP-group themed poster templates.  
 Based on **baposter** created by Brian Amberg (baposter@brian-amberg.de)  
-modified by me (May 2013)
+modified by @jvcasillas (May 2013) and ported to RMarkdown (Jan 2019).
 
-## Portrait
+## To do
 
-![UA portrait](ua_portrait.png)
-
-## Landscape
-
-![UA landscape](ua_landscape.png)
-
+- [x] create portrait
+- [ ] create landscape
