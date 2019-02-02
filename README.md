@@ -8,4 +8,5 @@ modified by @jvcasillas (May 2013) and ported to RMarkdown (Jan 2019).
 ## To do
 
 - [x] create portrait
-- [ ] create landscape
+- [x] create landscape
+- [ ] add html support

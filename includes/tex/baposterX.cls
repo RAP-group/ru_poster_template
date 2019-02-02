@@ -801,7 +801,7 @@
   \or % 2
     \setlength{\colwidth}{0.5\colwidth}%
   \or % 3
-    \setlength{\colwidth}{0.5\colwidth}%
+    \setlength{\colwidth}{0.3333333333333\colwidth}%
   \or % 4
     \setlength{\colwidth}{0.25\colwidth}%
   \or % 5
