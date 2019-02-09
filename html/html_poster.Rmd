@@ -1,8 +1,8 @@
 ---
 title: | 
-  Two ways to hear? </br>The double perceptual boundary effect in L2 learners 
+  Title here 
 author: |
-  *Joseph V. Casillas* </br> Rutgers University </br> joseph.casillas@rutgers.edu
+  *Author One* </br> Rutgers University </br> email@rutgers.edu
 header-includes:
    - \usepackage{tipa}
 output:
